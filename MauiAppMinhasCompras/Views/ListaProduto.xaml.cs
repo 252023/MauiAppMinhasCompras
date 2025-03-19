@@ -21,6 +21,7 @@ public partial class ListaProduto : ContentPage
 
         try
         {
+            lista.Clear();
 
             List<Produto> tmp = await App.Db.Getall();
 
